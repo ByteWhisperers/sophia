@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Doação - Sophia</title>
+    <meta name="description" content="Finalize sua doação para ajudar a Sophia. Escolha entre PIX ou Cartão de Crédito.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pagamento.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="payment-header">
+        <div class="container">
+            <div class="header-content">
+                <button class="back-button" onclick="window.history.back()">
+                    <i class="fas fa-arrow-left"></i>
+                    Voltar
+                </button>
+                <h1 class="payment-title">Finalizar Doação</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="payment-main">
+        <div class="container">
+            <!-- Success Icon -->
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+
+            <!-- Payment Title -->
+            <div class="payment-section-title">
+                <h2>Escaneie o código QR para pagar</h2>
+                <p class="payment-subtitle">Para Sophia</p>
+            </div>
+
+            <!-- Payment Options -->
+            <div class="payment-options">
+                <!-- PIX Payment -->
+                <div class="payment-option pix-option active" id="pix-option">
+                    <div class="payment-header-option">
+                        <i class="fas fa-qrcode"></i>
+                        <span>Pagamento via PIX</span>
+                    </div>
+                    
+                    <div class="payment-content">
+                        <div class="qr-code-container">
+                            <img src="images/qr-code-pix.jpg" alt="QR Code PIX" class="qr-code">
+                        </div>
+                        
+                        <div class="pix-info">
+                            <div class="pix-key-section">
+                                <label class="pix-key-label">Chave PIX</label>
+                                <div class="pix-key-container">
+                                    <input type="text" id="pix-key" value="fe379c78-535b-49e3-8bcd-99a527b837e6" readonly>
+                                    <button class="copy-button" onclick="copyPixKey()">
+                                        <i class="fas fa-copy"></i>
+                                        Copiar
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="beneficiary-info">
+                                <h4>Informações do Beneficiário:</h4>
+                                <div class="info-item">
+                                    <strong>Nome:</strong> Davi Carlos F. Santos (Pai da Sophia)
+                                </div>
+                                <div class="info-item">
+                                    <strong>CPF:</strong> ***.091.297-**
+                                </div>
+                                <div class="info-item">
+                                    <strong>Instituição:</strong> Doação Direta
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Credit Card Payment -->
+                <div class="payment-option card-option" id="card-option">
+                    <div class="payment-header-option">
+                        <i class="fas fa-credit-card"></i>
+                        <span>Pagamento com Cartão</span>
+                    </div>
+                    
+                    <div class="payment-content">
+                        <div class="card-icon">
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        
+                        <p class="card-description">
+                            Pague com segurança usando seu cartão de crédito ou débito
+                        </p>
+                        
+                        <a href="https://link.mercadopago.com.br/sosajuda" target="_blank" class="card-payment-button">
+                            <i class="fas fa-credit-card"></i>
+                            Pagar com Cartão
+                        </a>
+                        
+                        <div class="security-info">
+                            <div class="security-badge">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Pagamento Seguro</span>
+                            </div>
+                            <ul class="security-features">
+                                <li>• Processado pelo Mercado Pago</li>
+                                <li>• Dados protegidos com criptografia SSL</li>
+                                <li>• Aceita todos os cartões principais</li>
+                                <li>• Parcelamento disponível</li>
+                            </ul>
+                            
+                            <div class="accepted-cards">
+                                <span>Cartões aceitos:</span>
+                                <div class="card-brands">
+                                    <span class="card-brand">Visa</span>
+                                    <span class="card-brand">Mastercard</span>
+                                    <span class="card-brand">Elo</span>
+                                    <span class="card-brand">Hipercard</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Payment Instructions -->
+            <div class="payment-instructions">
+                <h3>Como pagar:</h3>
+                <ol>
+                    <li>Abra o app do seu banco</li>
+                    <li>Escaneie o QR Code ou copie a chave PIX</li>
+                    <li>Confirme o valor e finalize o pagamento</li>
+                    <li>Sua doação será processada instantaneamente</li>
+                </ol>
+            </div>
+
+            <!-- Help Section -->
+            <div class="help-section">
+                <h3>Precisa de ajuda?</h3>
+                <p>Se você tiver alguma dúvida sobre o processo de doação, entre em contato conosco.</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp: (21) 98110-3013</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email: ajuda@joaoantonio.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="js/pagamento.js"></script>
+</body>
+</html>
+

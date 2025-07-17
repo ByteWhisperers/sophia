@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Chamado da Sophia - Doações para Tratamento</title>
+    <meta name="description" content="Ajude Sophia, uma menina de 5 anos, a continuar seu tratamento. Sua doação pode transformar vidas e garantir um futuro cheio de esperança.">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="O Chamado da Sophia - Doações para Tratamento">
+    <meta property="og:description" content="Ajude Sophia, uma menina de 5 anos, a continuar seu tratamento. Sua doação pode transformar vidas.">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">Sophia</h1>
+                <button class="cta-button-header" onclick="scrollToSection('donation')">
+                    <i class="fas fa-heart"></i>
+                    Doar Agora
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Sophia Precisa de Você: Cada Doação é um Abraço de Esperança!</h1>
+                    <p class="hero-subtitle">Com apenas 5 anos, Sophia enfrenta uma batalha. Sua coragem nos inspira, mas ela precisa da sua ajuda AGORA. Sua doação é a chave para um futuro cheio de possibilidades. Não deixe a esperança dela se apagar.</p>
+                    <button class="cta-button-primary" onclick="scrollToSection('donation')">
+                        <i class="fas fa-heart"></i>
+                        DOE AGORA E SALVE UM SONHO!
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" id="donors-count">0</div>
+                        <div class="stat-label">Doadores</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">R$ <span id="raised-amount">0</span></div>
+                        <div class="stat-label">Arrecadado</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">R$ 50.000</div>
+                        <div class="stat-label">Meta</div>
+                    </div>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                    <div class="progress-text">
+                        <span id="progress-percentage">0%</span> da meta alcançada
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="story" id="story">
+        <div class="container">
+            <div class="story-content">
+                <div class="story-text">
+                    <h2 class="section-title">Sophia: Uma Pequena Gigante em Busca de um Amanhã</h2>
+                    <div class="story-paragraphs">
+                        <p>Sophia, 5 anos, luta contra uma doença rara e custosa. Cada dia é um desafio, mas seu sorriso é nossa força. Sua pergunta inocente: "Se eu não melhorar... a mamãe vai ficar sozinha?" parte o coração e nos lembra da urgência.</p>
+                        
+                        <blockquote class="quote">
+                            <i class="fas fa-quote-left"></i>
+                            "Se eu não melhorar... a mamãe vai ficar sozinha?"
+                            <cite>- Sophia, 5 anos</cite>
+                        </blockquote>
+                        
+                        <p>O tratamento é vital, mas os custos são esmagadores. Sem seu apoio, o futuro de Sophia está em risco. Ela merece crescer, brincar, viver. Não podemos deixá-la sozinha nessa batalha.</p>
+                    </div>
+                </div>
+                <div class="story-image">
+                    <img src="images/2.png" alt="Sophia brincando no hospital" loading="lazy">
+                    <div class="image-caption">Sophia mantém seu sorriso mesmo nos momentos mais difíceis</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem" id="problem">
+        <div class="container">
+            <h2 class="section-title">Um Passo Crucial: O Tratamento de Sophia Precisa Continuar</h2>
+            
+            <div class="problem-image-container">
+                <img src="images/3.png" alt="Sophia durante o tratamento" class="problem-image" loading="lazy">
+            </div>
+            
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <h3>Medicamentos Essenciais</h3>
+                    <p>Medicamentos específicos e de alto custo são necessários diariamente para o tratamento de Sophia.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>Acompanhamento Médico</h3>
+                    <p>Consultas regulares com especialistas e exames são fundamentais para monitorar o progresso.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <i class="fas fa-heart-pulse"></i>
+                    </div>
+                    <h3>Terapias Intensivas</h3>
+                    <p>Sessões de terapia especializadas ajudam na recuperação e desenvolvimento de Sophia.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Urgência Temporal</h3>
+                    <p>Cada dia sem tratamento pode comprometer a recuperação e o futuro de Sophia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Desire Section -->
+    <section class="desire" id="desire">
+        <div class="container">
+            <div class="desire-content">
+                <div class="desire-text">
+                    <h2 class="section-title">Seja a Luz na Vida da Sophia: Sua Doação Transforma Destinos!</h2>
+                    
+                    <div class="desire-image-container">
+                        <img src="images/4.png" alt="Sophia sorrindo" class="desire-image" loading="lazy">
+                    </div>
+                    
+                    <div class="desire-paragraphs">
+                        <p>Sua ajuda é a chave para um futuro cheio de possibilidades para Sophia. Cada contribuição, por menor que seja, é um ato de amor que se traduz em esperança e cura. Ao doar, você não está apenas oferecendo um valor monetário; você está investindo na vida de uma criança, permitindo que ela continue seu tratamento, tenha acesso aos medicamentos essenciais e às terapias que a levarão à recuperação plena.</p>
+                        
+                        <p>Imagine a Sophia crescendo, explorando o mundo com a curiosidade de uma criança, realizando seus sonhos e vivendo uma vida plena e feliz. Sua generosidade pode garantir que a esperança de Sophia nunca se apague. Você se torna parte da história de superação dela, um herói silencioso que oferece a ela a chance de um futuro brilhante.</p>
+                        
+                        <p>Cada real doado será utilizado com total transparência para cobrir os custos do tratamento, medicamentos, terapias e acompanhamento médico. A família de Sophia está comprometida em prestar contas de cada centavo, garantindo que sua generosidade tenha o impacto direto e transformador que Sophia merece.</p>
+                    </div>
+                </div>
+                <div class="impact-chart">
+                    <h3>Como Sua Doação é Utilizada</h3>
+                    <div class="chart-container">
+                        <div class="chart-item">
+                            <div class="chart-bar" style="--percentage: 40%"></div>
+                            <div class="chart-label">Medicamentos (40%)</div>
+                        </div>
+                        <div class="chart-item">
+                            <div class="chart-bar" style="--percentage: 30%"></div>
+                            <div class="chart-label">Consultas Médicas (30%)</div>
+                        </div>
+                        <div class="chart-item">
+                            <div class="chart-bar" style="--percentage: 20%"></div>
+                            <div class="chart-label">Terapias (20%)</div>
+                        </div>
+                        <div class="chart-item">
+                            <div class="chart-bar" style="--percentage: 10%"></div>
+                            <div class="chart-label">Exames (10%)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Section -->
+    <section class="donation" id="donation">
+        <div class="container">
+            <div class="donation-content">
+                <h2 class="section-title">Seu Amor, o Futuro da Sophia: Doe Agora!</h2>
+                <p class="section-subtitle">Não espere! Sua empatia é a ação que Sophia precisa. Cada segundo conta. Garanta o tratamento contínuo dela. Escolha o valor que toca seu coração e junte-se a nós. Sua contribuição, por menor que seja, faz a diferença.</p>
+                
+                <div class="donation-form">
+                    <div class="amount-selection">
+                        <h3>Escolha o Valor da Sua Doação:</h3>
+                        <div class="amount-buttons">
+                            <button class="amount-btn" data-amount="25">
+                                <span class="amount">R$ 25</span>
+                                <span class="description">Um dia de medicação</span>
+                            </button>
+                            <button class="amount-btn" data-amount="50">
+                                <span class="amount">R$ 50</span>
+                                <span class="description">Uma sessão de terapia</span>
+                            </button>
+                            <button class="amount-btn" data-amount="100">
+                                <span class="amount">R$ 100</span>
+                                <span class="description">Exames e consultas</span>
+                            </button>
+                            <button class="amount-btn" data-amount="200">
+                                <span class="amount">R$ 200</span>
+                                <span class="description">Uma semana de tratamento</span>
+                            </button>
+                        </div>
+                        <div class="custom-amount">
+                            <label for="custom-amount-input">Ou digite outro valor:</label>
+                            <div class="input-group">
+                                <span class="currency">R$</span>
+                                <input type="number" id="custom-amount-input" placeholder="0,00" min="1" step="0.01">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="newsletter" checked>
+                            <span class="checkmark"></span>
+                            Quero receber atualizações sobre o tratamento da Sophia
+                        </label>
+                    </div>
+                    
+                    <button class="cta-button-donation" id="donate-button">
+                        <i class="fas fa-heart"></i>
+                        <span id="donate-button-text">QUERO DOAR E AJUDAR A SOPHIA!</span>
+                    </button>
+                    
+                    <div class="security-badges">
+                        <div class="badge">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Doação Segura</span>
+                        </div>
+                        <div class="badge">
+                            <i class="fas fa-eye"></i>
+                            <span>100% Transparente</span>
+                        </div>
+                        <div class="badge">
+                            <i class="fas fa-certificate"></i>
+                            <span>Prestação de Contas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="social-proof" id="social-proof">
+        <div class="container">
+            <h2 class="section-title">Juntos Somos Mais Fortes</h2>
+            
+            <div class="testimonials-image-container">
+                <img src="images/5.png" alt="Sophia com a família" class="testimonials-image" loading="lazy">
+            </div>
+            
+            <div class="testimonials">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Conhecer a história da Sophia me tocou profundamente. Cada criança merece a chance de viver plenamente. Minha doação é um investimento no futuro dela."</p>
+                        <div class="testimonial-author">
+                            <strong>Maria Silva</strong>
+                            <span>Doadora</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Como pai, não posso imaginar a dor de ver um filho lutando. Ajudar a Sophia é ajudar uma família inteira a ter esperança novamente."</p>
+                        <div class="testimonial-author">
+                            <strong>João Santos</strong>
+                            <span>Doador</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"A coragem da Sophia me inspira todos os dias. Contribuir para seu tratamento é participar de um milagre em construção."</p>
+                        <div class="testimonial-author">
+                            <strong>Ana Costa</strong>
+                            <span>Doadora</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-envelope"></i> contato@sophiaesperanca.com.br</p>
+                    <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Transparência</h3>
+                    <p>Todos os recursos arrecadados são destinados exclusivamente ao tratamento da Sophia.</p>
+                    <p>Relatórios de prestação de contas são enviados mensalmente.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Campanha Sophia Esperança. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fixed Donation Button -->
+    <div class="fixed-donation-btn" id="fixed-donation-btn">
+        <button onclick="scrollToSection('donation')">
+            <i class="fas fa-heart"></i>
+            Doar
+        </button>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/donation-form.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
+
